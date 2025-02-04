@@ -45,3 +45,10 @@
     font-weight: 400;
     src: url('../../fonts/eb_garamond/EbGaramond12Regular-weJw.ttf') format("truetype");
 }
+
+@font-face {
+    font-family: 'fair';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../../fonts/playfair/PlayfairDisplay-Regular.ttf') format('truetype');
+}

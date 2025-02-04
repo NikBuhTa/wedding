@@ -9,40 +9,72 @@
     flex-direction: column;
     margin: 0 auto;
     background-color: #f0eae6;
-    font-family: 'garamond', sans-serif;
+    font-family: 'fair', sans-serif;
     font-weight: 300;
-    gap: 100px;
+    gap: 200px;
+    /* margin-top: 150px; */
 }
 
 .header {
     box-sizing: border-box;
-    max-width:  640px;
     width: 100%;
+    height: 100vh;
     margin: 0 auto;
-    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    padding: 50px;
+    position: relative;
+    color: #f0eae6;
+    gap: 120px;
 }
 
 .invite_head {
     margin: 0 auto;
-    font-family: garamond, sans-serif;
-    font-weight: 300;
-    font-size: 38px;
+    font-family: fair, sans-serif;
+    font-weight: 400;
+    font-size: 76px;
     text-align: center;
+    z-index: 1;
 }
 .invite_names {
     margin: 0 auto;
-    font-family: garamond, sans-serif;
+    font-family: fair, sans-serif;
     font-weight: 300;
+    font-size: 38px;
+    text-align: center;
+    z-index: 1;
+}
+
+.text {
+    max-width: 640px;
+    width: 100%;
+    text-align: center;
+    font-size: 38px;
+}
+
+.text_date {
+    margin: 0 auto;
+    font-family: fair, sans-serif;
+    font-weight: bold;
+    margin-top: 80px;
     font-size: 38px;
 }
 
 .invite_img {
     box-sizing: border-box;
-    padding: 10px;
+    object-fit: cover;
     width: 100%;
+    height: 100%;
     margin: 0 auto;
-    border-radius: 20px;
-    border: 1px solid gray;
+    position: relative;
+    filter: brightness(20%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .init_container {
@@ -58,7 +90,7 @@
 
 .text_head {
     margin: 0 auto 30px;
-    font-family: garamond, sans-serif;
+    font-family: fair, sans-serif;
     font-weight: 300;
     font-size: 38px;
     text-decoration: underline;
@@ -67,7 +99,7 @@
 
 .init_text {
     margin: 0 auto;
-    font-family: garamond, sans-serif;
+    font-family: fair, sans-serif;
     font-weight: 300;
     font-size: 38px;
 }
@@ -75,7 +107,7 @@
 .calendar_name {
     text-align: center;
     margin: 0 auto;
-    font-family: garamond, sans-serif;
+    font-family: fair, sans-serif;
     font-weight: 300;
     font-size: 38px;
 }
@@ -150,7 +182,7 @@
 .banket::after {
     content: '';
     position: absolute;
-    left: -20px;
+    left: -19px;
     right: 0;
     top: -5px;
     bottom: 0;
@@ -170,7 +202,7 @@
     position: absolute;
     left: -17px;
     right: 0;
-    top: -5px;
+    top: -3px;
     bottom: 0;
     width: 36px;
     height: 36px;
@@ -182,7 +214,7 @@
 .events {
     box-sizing: border-box;
     width: 100%;
-    margin: 0 auto 20px;
+    margin: 0 auto 80px;
 }
 
 .event {
@@ -192,11 +224,12 @@
     display: flex;
     flex-direction: column;
     justify-content: left;
+    gap: 10px;
 }
 
 .event_head {
     margin: 0;
-    font-family: garamond, sans-serif;
+    font-family: fair, sans-serif;
     font-weight: 300;
     font-size: 30px;
     text-decoration: underline;
@@ -204,14 +237,14 @@
 
 .event_time {
     margin: 0;
-    font-family: garamond, sans-serif;
+    font-family: fair, sans-serif;
     font-weight: 300;
     font-size: 30px;
 }
 
 .event_text {
     margin: 0;
-    font-family: garamond, sans-serif;
+    font-family: fair, sans-serif;
     font-weight: 300;
     font-size: 24px;
 }
@@ -242,25 +275,25 @@
     justify-content: center;
     gap: 20px;
     padding: 20px;
-    background-color: #f0eae6;
+    /* background-color: #f0eae6; */
     border-radius: 10px;
-    font-family: garamond, sans-serif;
-    border: 1px solid gray;
+    font-family: fair, sans-serif;
+    /* border: 1px solid gray; */
 }
 
 .countdown-item {
     text-align: center;
-    background-color: #f1e5dc;
-    border: 1px solid gray;
+    /* background-color: #f1e5dc; */
+    /* border: 1px solid gray; */
     padding: 20px;
-    border-radius: 8px;
     min-width: 100px;
+    border-right: 1px solid gray;
 }
 
 .number {
     font-size: 3em;
     font-weight: bold;
-    color: #576855;
+    color: #f0eae6;
     display: block;
     margin-bottom: 5px;
     transition: all 0.3s ease;
@@ -268,8 +301,12 @@
 
 .label {
     font-size: 1em;
-    color: #576855;
+    color: #f0eae6;
     text-transform: uppercase;
+}
+
+.countdown-item:nth-last-of-type(1) {
+    border: none;
 }
 
 .animate {
@@ -289,7 +326,7 @@
 .calendar {
     width: 400px;
     
-    font-family: garamond, sans-serif;
+    font-family: fair, sans-serif;
     padding: 10px;
     border: 1px solid gray;
     border-radius: 10px;
@@ -324,7 +361,7 @@
     border-radius: 4px;
     min-height: 30px;
     transition: background-color 0.2s;
-    font-family: garamond, sans-serif;
+    font-family: fair, sans-serif;
     font-weight: 300;
     font-size: 38px;
 }
@@ -459,11 +496,26 @@
         max-width: 300px;
         gap: 20px;
     }
+
+    .text {
+        /* max-width: 330px; */
+        font-size: 28px;
+    }
+
     .invite_head {
-        font-size: 24px;
+        font-size: 42px;
     }
     .invite_names {
-        font-size: 24px;
+        font-size: 28px;
+    }
+
+    .invite_img {
+        object-position: -430px;
+    }
+
+    .header {
+        padding-top: 150px;
+        gap: 130px;
     }
 
     .init_container {
@@ -509,12 +561,8 @@
         font-size: 22px;
     }
 
-    .header {
-        height: 50px;
-    }
-
     .page {
-        gap: 20px;
+        gap: 100px;
     }
 
     .number {
