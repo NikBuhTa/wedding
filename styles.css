@@ -12,7 +12,7 @@
     background-color: #f0eae6;
     font-family: 'fair', sans-serif;
     font-weight: 300;
-    gap: 200px;
+    /* gap: 200px; */
     /* margin-top: 150px; */
 }
 
@@ -94,7 +94,7 @@
     max-width: 640px;
     width: 100%;
     padding: 10px;
-    margin: 0 auto;
+    margin: 200px auto 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,6 +114,7 @@
     font-family: fair, sans-serif;
     font-weight: 300;
     font-size: 38px;
+    text-align: justify;
 }
 
 .calendar_name {
@@ -124,12 +125,15 @@
     font-size: 38px;
 }
 
+.footer_text {
+    text-align: center;
+}
 
 .section {
     box-sizing: border-box;
     max-width: 640px;
     width: 100%;
-    margin: 0 auto;
+    margin: 200px auto 0;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -259,6 +263,8 @@
     font-family: fair, sans-serif;
     font-weight: 300;
     font-size: 24px;
+    text-align: justify;
+
 }
 
 .anketa_img {
@@ -502,7 +508,7 @@
     }
     
     .event_text {
-        font-size: 26px;
+        font-size: 24px;
     }
 }
 
