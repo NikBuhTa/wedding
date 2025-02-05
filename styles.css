@@ -5,6 +5,7 @@
     max-width: 1920px;
     min-width: 320px;
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -16,21 +17,25 @@
 }
 
 .header {
-    box-sizing: border-box;
+    box-sizing:content-box;
+    object-fit: cover;
     width: 100%;
     height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-evenly; */
-    padding: 50px;
+    justify-content: space-between;
     position: relative;
     color: #f0eae6;
-    gap: 120px;
+    /* gap: calc(100vh/7); */
+    padding-top: calc(100vh/15);
+    padding-bottom: calc(100vh/15);
 }
 
 .invite_head {
+    box-sizing: border-box;
+    padding: 0 10px;
     margin: 0 auto;
     font-family: fair, sans-serif;
     font-weight: 400;
@@ -39,6 +44,8 @@
     z-index: 1;
 }
 .invite_names {
+    padding: 0 10px;
+    box-sizing: border-box;
     margin: 0 auto;
     font-family: fair, sans-serif;
     font-weight: 300;
@@ -48,23 +55,28 @@
 }
 
 .text {
+    padding: 0 10px;
+    box-sizing: border-box;
     max-width: 640px;
     width: 100%;
     text-align: center;
     font-size: 38px;
+    margin: 0 auto;
 }
 
 .text_date {
+    padding: 0 10px;
+    box-sizing: border-box;
     margin: 0 auto;
     font-family: fair, sans-serif;
     font-weight: bold;
-    margin-top: 80px;
+    /* margin-top: 80px; */
     font-size: 38px;
 }
 
 .invite_img {
     box-sizing: border-box;
-    object-fit: cover;
+    object-fit:cover;
     width: 100%;
     height: 100%;
     margin: 0 auto;
@@ -421,16 +433,34 @@
         margin-bottom: 5px;
     }
 
+    /* .header {
+        padding: 50px;
+        gap: 100px;
+    } */
+
     .section {
         max-width: 480px;
         gap: 20px;
     }
     .invite_head {
-        font-size: 28px;
+        font-size: 46px;
     }
     .invite_names {
-        font-size: 28px;
+        font-size: 30px;
     }
+
+    .text {
+        font-size: 30px;
+    }
+
+    .text_date {
+        font-size: 32px;
+        /* margin-top: 150px; */
+    }
+
+    /* .invite_img {
+        object-position: -430px;
+    } */
 
     .init_container {
         max-width: 480px;
@@ -509,14 +539,14 @@
         font-size: 28px;
     }
 
-    .invite_img {
+    /* .invite_img {
         object-position: -430px;
-    }
+    } */
 
-    .header {
+    /* .header {
         padding-top: 150px;
         gap: 130px;
-    }
+    } */
 
     .init_container {
         max-width: 300px;
