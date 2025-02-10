@@ -115,7 +115,7 @@ html {
 
 .init_text {
     margin: 0 auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+    font-family: Segoe, sans-serif;
     font-weight: 300;
     font-size: 17px;
     text-align: justify;
@@ -270,7 +270,7 @@ html {
 
 .event_text {
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Segoe;
     font-weight: 300;
     font-size: 17px;
     text-align: justify;
@@ -395,7 +395,7 @@ html {
     border-radius: 4px;
     min-height: 30px;
     transition: background-color 0.2s;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+    font-family: Segoe, sans-serif;
     font-weight: 300;
 }
 
@@ -437,7 +437,7 @@ html {
     align-items: center;
     justify-content: center;
     font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+    font-family: Segoe, sans-serif;
     color: #95a5a6;
     margin-bottom: 5px;
 }
