@@ -52,3 +52,8 @@
     font-weight: 300;
     src: url('../../fonts/playfair/PlayfairDisplay-Regular.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'Segoe';
+    src: url('../../fonts/segoeLight/ofont.ru_Segoe\ UI\ Light.ttf') format('truetype');
+}

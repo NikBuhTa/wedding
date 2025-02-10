@@ -54,13 +54,13 @@ function createCalendar() {
     const weekdays = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
     
     // Очищаем сетку и добавляем заголовки
-    // grid.innerHTML = '';
-    // weekdays.forEach(day => {
-    //     const header = document.createElement('div');
-    //     header.className = 'weekday-header';
-    //     header.textContent = day;
-    //     grid.appendChild(header);
-    // });
+    grid.innerHTML = '';
+    weekdays.forEach(day => {
+        const header = document.createElement('div');
+        header.className = 'weekday-header';
+        header.textContent = day;
+        grid.appendChild(header);
+    });
 
     // Рассчитываем начало месяца
     const firstDayOfMonth = new Date(2025, 5, 1).getDay(); // 0 = воскресенье
