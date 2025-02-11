@@ -103,6 +103,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 30px;
 }
 
 .text_head {
@@ -118,7 +119,7 @@ html {
     font-family: Segoe, sans-serif;
     font-weight: 300;
     font-size: 17px;
-    text-align: justify;
+    text-align: center;
 }
 
 .calendar_name {
@@ -486,6 +487,10 @@ html {
         max-width: 480px;
     }
 
+    .event {
+        gap: 15px;
+    }
+
     .text_date {
         font-size: 22px;
         /* margin-top: 150px; */
@@ -498,6 +503,7 @@ html {
     .init_container {
         max-width: 480px;
         padding: 10px;
+        gap: 20px;
     }
     
     .text_head {
@@ -532,6 +538,7 @@ html {
 
     .event_head {
         font-size: 19px;
+        font-weight: 300;
     }
     
     .event_time {
@@ -619,7 +626,7 @@ html {
     }
     
     .days-grid {
-        gap: 0px;
+        gap: 10px;
     }
 
     .day {
@@ -634,7 +641,7 @@ html {
     }
 
     .event_head {
-        font-size: 22px;
+        /* font-size: 22px; */
     }
     
     /* .event_time {
