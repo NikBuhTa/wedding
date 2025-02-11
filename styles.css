@@ -120,6 +120,7 @@ html {
     font-weight: 300;
     font-size: 17px;
     text-align: center;
+    line-height: 1.45;
 }
 
 .calendar_name {
@@ -275,7 +276,7 @@ html {
     font-weight: 300;
     font-size: 17px;
     text-align: justify;
-
+    line-height: 1.45;
 }
 
 .anketa_img {
@@ -630,7 +631,7 @@ html {
     }
 
     .day {
-        font-size: 24px;
+        font-size: 20px;
         min-height: 25px;
     }
     
